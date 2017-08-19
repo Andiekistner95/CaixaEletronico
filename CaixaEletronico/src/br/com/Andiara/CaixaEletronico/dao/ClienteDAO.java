@@ -19,7 +19,7 @@ public void imprimeExtratoCliente(int codigo) throws SQLException{
 		
 		PreparedStatement statement = con.prepareStatement(sql);
 		statement.setInt(1, codigo);
-		
+		statement.execute();
 		try (ResultSet rs = statement.getResultSet()) {
 		
 			

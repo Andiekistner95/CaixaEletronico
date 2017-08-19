@@ -19,6 +19,7 @@ public class CaixaEletronicoDAO {
 
 		PreparedStatement statement = con.prepareStatement(sql);
 		statement.setInt(1, codigo);
+		statement.execute();
 
 		double saldo = 0;
 
